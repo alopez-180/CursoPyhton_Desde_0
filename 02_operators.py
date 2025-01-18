@@ -64,4 +64,7 @@ print( "Aaaa" >= "aaaa") # Las mayusculas y minusculas también son diferentes.
 
 print(3 > 4 and "Hola" > "Python")
 print(3 > 4 or "Hola" > "Python")
-# print(3 > 4 not "Hola" > "Python")
+print(3 < 4 and "Hola" < "Python")
+print(3 < 4 or "Hola" > "Python")
+print(3 < 4 or ("Hola" > "Python" and 4 == 4))
+print(not(3 > 4))
