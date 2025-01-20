@@ -6,7 +6,7 @@ sigue = True
 
 while sigue:
     try:
-        numero = float(input("Escribe un numero en decimal: "))
+        numero = int(input("Escribe un numero en decimal: "))
         sigue = False
     except ValueError:
         print("Error, introduce un numero decimal: ")
@@ -14,22 +14,19 @@ while sigue:
 
 sigue = True
 numeros_binario = []
-
-
-division = numero // 2 
-division = int(division)
-resto = numero % 2 
-numeros_binario.append(int(resto))
+division = numero
 
 while sigue: 
-    if division >> 0:
-        division = division / 2
-        division = int(division)
-        print(division)
+    if division > 0:
         resto = division % 2  
         numeros_binario.append(int(resto))
-
+        division = division // 2
+        division = int(division)
     elif division == 0:
         sigue = False
 
-print(numeros_binario)
+ordenar_numeros = []
+for i in (numeros_binario[::-1]):
+    ordenar_numeros.append(i) 
+       
+print(ordenar_numeros)
