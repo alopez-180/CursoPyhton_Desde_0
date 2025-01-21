@@ -37,6 +37,6 @@ my_other_set = {"Alex", "Lopez", 35}
 my_new_set = (my_set.union(my_other_set)) # Para unir sets, se tendria que hacer de esta manera. Y teniendo en cuenta que no se duplican.
 print(my_new_set)
 
-print(my_new_set.difference(my_set))
+print(my_new_set.difference(my_set)) # Diferenciamos elementos de un set y otro set
 
 
