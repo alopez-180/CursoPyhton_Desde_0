@@ -24,6 +24,9 @@ for i in range (tamaño):
         print("*", end=" ")
     print(" ")
 
+    
+print("###############")
+
 ## Rombo ## 
 
 for i in range (tamaño):
@@ -32,7 +35,6 @@ for i in range (tamaño):
     for k in range (2*i+1):
         print("*", end=" ")
     print()
-
 for i in range (tamaño):
     for j in range (tamaño-i-1):
         print(" ", end=" ")
