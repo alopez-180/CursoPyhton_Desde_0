@@ -5,7 +5,6 @@ def my_function ():
     print("Esto es una funcion")
 
 
-
 my_function()
 
 def sum_two_values (primer_numero, segundo_numero):
