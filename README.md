@@ -4,7 +4,7 @@
 
 En este repositorio, voy guardando todo lo aprendido mientras sigo el curso de MoureDev de Python desde 0.
 
-[Enlace al curso de Python de MoureDev]<https://www.youtube.com/watch?v=Kp4Mvapo5kc>
+<https://www.youtube.com/watch?v=Kp4Mvapo5kc>
 
 ## Contenido
 
