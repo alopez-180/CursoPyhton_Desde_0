@@ -26,10 +26,8 @@ def ordenar_lista(lista, orden):
     return lista
 
 
-
-
 lista = [1, 5, 4, 10, 6]
-lista = [1, 5, 4, 10, 6]
+
 orden = "Desc"
 resultado = ordenar_lista(lista, orden)
 print(resultado)
