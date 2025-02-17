@@ -9,28 +9,27 @@
  */
 """
 # https://www.electrontools.com/Home/WP/ley-de-ohm-formula-y-ejemplos/
-
 # la tensión (V), la corriente (I) y la resistencia (R) en un circuito eléctrico
+# V = I * R
+# I = V / R
+# R = V / I
 
 def ley_ohm (I=0, R=0, V=0):
 
     if I == 0:
-        resultado = (V / R)
-
+        resultado = round((V / R), 2)
     elif V == 0:
-        resultado = (I * R)
-
+        resultado = round((I * R), 2)
     elif R == 0:
-        resultado = (V / I)
-
+        resultado = round((V / I), 2)
     else:
-        resultado = "Error"
+        resultado = "Invalid values"
 
     return(resultado)
 
 
-I = 5
+I = 54
 V = 12
 R = 0
-resultado = ley_ohm(I, V)
+resultado = ley_ohm(I=I, V=V)
 print(resultado)

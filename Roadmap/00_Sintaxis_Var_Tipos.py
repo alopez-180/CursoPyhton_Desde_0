@@ -16,18 +16,27 @@
 # * - Crea un comentario en el código y coloca la URL del sitio web oficial del lenguaje de programación que has seleccionado.
 
 """ EL LEGUANJE DE PROGRAMACIÓN ELEJIDO ES PYTHON
-#https://www.python.org/ """
+https://www.python.org/ """
 
 # * - Representa las diferentes sintaxis que existen de crear comentarios en el lenguaje (en una línea, varias...).
 
 """
 Existe la sintaxis de utilizar dobles comillas 
 """
+
+'''
+Comillas simples
+'''
+
 # O por la otra parte a de utilizar almohadilla
 
 # * - Crea una variable (y una constante si el lenguaje lo soporta).
 
 my_var = "Esto es una variable"
+""" Pytho no tiene constantes (variables que no cambian)"""
+
+MY_CONSTANT = "Mi constante" # En realidad, se puede cambiar el valor, pero si pones 
+# el nombre en mayusculas, das a entender que no quieres modificar el tipo de valor
 
 # * - Crea variables representando todos los tipos de datos primitivos del lenguaje (cadenas de texto, enteros, booleanos...).
 
