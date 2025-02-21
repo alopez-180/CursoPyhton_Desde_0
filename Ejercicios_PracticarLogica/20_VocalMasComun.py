@@ -10,28 +10,25 @@
 def countvocales (string):
     string = string.lower()
     vocales = ["a", "e", "i", "o", "u"]
-    masvocales = []
-
+    vocales_pequeñas = []
     for i in vocales:
-        count_i = (string.count(i))
         for j in vocales:
-            count_j = (string.count(j))
-            if (count_i > count_j):
-                if masvocales.count(i) == 0:
-                    masvocales.append(i)
-                vocales.remove(j)
-    
-    if (len(masvocales) > 1):
-        veces = ' '.join(masvocales)
-        veces = string.count(veces[0])
-        return (f"Hay dos vocales que aparecen las mismas veces: {masvocales}, en un total de {veces} veces")
+            if (string.count(i) > string.count(j)):
+                if vocales_pequeñas.count(j) == 0:
+                    vocales_pequeñas.append(j)
 
+    for i in vocales_pequeñas:
+        vocales.remove(i)
+    
+    contador = string.count(vocales[0])            
+    if (len(vocales) > 1):
+        print(f"Hay {len(vocales)} vocales que aparecen las mismas veces, un total de {contador}")
+        print(f"{vocales}")
     else:
-        letra = ' '.join(masvocales)
-        veces = string.count(letra)
-        return (f"La vocal que aparece más veces es la: {letra}, con un total de {veces} veces ")
+        print(f"La vocal {vocales} , es la que más aparece, con un total de {contador} veces.")
 
     
-string = "Hola me llamo Pedro ooaa aa"
-resultado = countvocales(string)
-print(resultado)
+ 
+    
+string = "Hola me llamo Pedriii"
+countvocales(string)
