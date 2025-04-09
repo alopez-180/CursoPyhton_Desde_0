@@ -39,25 +39,20 @@ print(resultado)
  * Presta especial atención a la sintaxis que debes utilizar en cada uno de los casos.
  * Cada lenguaje sigue una convenciones que debes de respetar para que el código se entienda.
  */
-"""
-"""
-def cadenator (str1, str2):
-    contador = 0
-    for i in range(1,101):
-        if (i % 3 == 0 and i % 5 == 0):
-            print(str1 + " " + str2)
-        elif (i % 3 == 0):
+
+ """
+
+def funct(str1,str2):
+    for i in range (1,100+1):
+        if (i // 3 == 0 and i // 5 == 0):
+            print (str1+str2)
+        elif (i // 2 == 0):
             print(str1)
-        elif (i % 5 == 0):
-            print(str2)
-        else:
-            print(i)
-            contador += 1
+        elif (i // 5 == 0):
+            print (str2)
 
-    return contador
 
-str1 = "Hola me llamo Alex"
-str2 = "Hola me llamo Pepe"
-resultado = cadenator(str1,str2)
-print(f"Se han impreso {resultado} numeros")
-"""
+str1 = "hola"
+str2 = "adios"
+
+funct(str1,str2)

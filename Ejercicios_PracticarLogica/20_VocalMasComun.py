@@ -13,8 +13,8 @@ def countvocales (string):
     vocales_pequeñas = []
     for i in vocales:
         for j in vocales:
-            if (string.count(i) > string.count(j)):
-                if vocales_pequeñas.count(j) == 0:
+            if (string.count(i) > string.count(j)): 
+                if vocales_pequeñas.count(j) == 0:  # Añadimos a una lista, las vocales que menos aparecen ya que al hacer la comparación de i y j, las grandes nunca apareceran como j
                     vocales_pequeñas.append(j)
 
     for i in vocales_pequeñas:

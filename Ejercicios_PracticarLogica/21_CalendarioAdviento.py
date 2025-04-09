@@ -19,3 +19,9 @@
  */
 """
 
+def funcion (fecha):
+    if (fecha[3:5] == "12" ):
+        print("Estamos en diciembre")
+
+fecha = "10/12/2024"
+funcion(fecha)
